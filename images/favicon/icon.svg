@@ -7,7 +7,7 @@
     font-style: normal;
     font-display: swap;
     }
-    text { font-family: "jr-cen_rollsignregular", font-weight:700; }
+    text { font-family: "jr-cen_rollsignregular"}
     .gousha{
       fill:rgb(255,165,0)
     }
