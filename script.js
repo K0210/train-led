@@ -150,7 +150,12 @@ function updateDisplay() {
                     typeText.style.marginLeft = "-0.25em";
                 }
                 
-                typeText.style.marginTop = "0.4em";
+                if (window.innerWidth <= 600) {
+                    typeText.style.marginTop = "10px";
+                } else {
+                    typeText.style.marginTop = "30px";
+                }
+                
             }else{
                 typeText.style.fontSize = "";
                 typeText.style.fontWeight = ""; // その他は通常サイズに戻す
@@ -363,8 +368,13 @@ function switchLanguage() {
                     typeText.style.letterSpacing = "-0.2em";
                     typeText.style.marginLeft = "-0.25em";
                 }
+
+                if (window.innerWidth <= 600) {
+                    typeText.style.marginTop = "10px";
+                } else {
+                    typeText.style.marginTop = "30px";
+                }
                 
-                typeText.style.marginTop = "0.4em";
             }else{
                 typeText.style.fontSize = "";
                 typeText.style.fontWeight = ""; // その他は通常サイズに戻す

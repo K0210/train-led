@@ -22,13 +22,17 @@ body {
       padding: 2em;
     }
 
-    .display-frame {
-      background-color: #333;
-      padding: 1em;
-      border-radius: 1em;
-      width: fit-content;
-      box-shadow: 0 0 15px #000;
-    }
+.title {
+  font-size: 2em;
+}
+
+.display-frame {
+  background-color: #333;
+  padding: 1em;
+  border-radius: 1em;
+  width: fit-content;
+  box-shadow: 0 0 15px #000;
+}
 
 .led-display {
     display: flex;
@@ -104,7 +108,7 @@ body {
 #type-text {
     font-size: 0.9em; /* ← このサイズだけを JavaScript で変更する */
     display: inline-block;
-    line-height: 1;
+    line-height: 1.5em;
     text-shadow: 1px 1px 0 black, /* 右下 */
                -1px 1px 0 black, /* 左下 */
                1px -1px 0 black, /* 右上 */
@@ -275,4 +279,17 @@ footer #site-version {
 
 #save-image-button:active {
   transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.5em;
+    /*transform: scale(0.8); */  /* 全体を縮小 */
+  }
+  .display-frame {
+    transform: scale(0.55);   /* 全体を縮小 */
+  }
+  .controls {
+    transform: scale(1);   /* 全体を縮小 */
+  }
 }
